@@ -1,13 +1,35 @@
 <!doctype html>
 <html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>ALA 5</title><link rel="stylesheet" href="../style.css"></head>
+<title>Cloud Computing - ALA Submission</title>
+<link rel="stylesheet" href="style.css"></head>
 <body>
-<header><h1>ALA 5</h1><p>Write ALA 5 title here</p></header>
+<header>
+  <h1>Cloud Computing - ALA Submission</h1>
+  <p id="studentLine"></p>
+</header>
 <main>
-  <p><a class="back" href="../index.html">&larr; Back to all ALAs</a></p>
-  <div class="box">
-    <h3>ALA 5 details</h3>
-    <p>Add your ALA 5 content here (text, PDF link, screenshots or app link).</p>
+  <div class="grid">
+    <a class="card" href="ala1/index.html"><h2>ALA 1</h2><p>Cloud web application deployment (Render + Neon PostgreSQL)</p></a>
+    <a class="card" href="ala2/index.html"><h2>ALA 2</h2><p>Write ALA 2 title here</p></a>
+    <a class="card" href="ala3/index.html"><h2>ALA 3</h2><p>Write ALA 3 title here</p></a>
+    <a class="card" href="ala4/index.html"><h2>ALA 4</h2><p>Write ALA 4 title here</p></a>
+    <a class="card" href="ala5/index.html"><h2>ALA 5</h2><p>Write ALA 5 title here</p></a>
   </div>
-</main></body></html>
+</main>
+<footer id="teacherLine"></footer>
+
+<script>
+  // ===== FILL YOUR DETAILS HERE (change only the text between the quotes) =====
+  var STUDENT_NAME  = "Jainisha Makwana";
+  var ENROLLMENT_NO = "20230905090017";
+  var CLASS_NAME    = "C";
+  var TEACHER_NAME  = "Dhaval Chandarana";
+  // ===========================================================================
+
+  document.getElementById("studentLine").textContent =
+    "Name: " + STUDENT_NAME + "  |  Enrollment No: " + ENROLLMENT_NO + "  |  Class: " + CLASS_NAME;
+  document.getElementById("teacherLine").textContent = "Submitted to: " + TEACHER_NAME;
+</script>
+</body></html>
+
