@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ALA 1 - Cloud Deployment</title><link rel="stylesheet" href="../style.css"></head>
+<body>
+<header><h1>ALA 1 - Cloud Web Application Deployment</h1>
+<p>Hosted on Render (web service) with a Neon PostgreSQL cloud database</p></header>
+<main>
+  <p><a class="back" href="../index.html">&larr; Back to all ALAs</a></p>
+
+  <div class="box">
+    <h3>1. Live application</h3>
+    <p>The application is running on a Render web service and is accessible over the internet.
+       Note: it is on a free plan, so the first load after inactivity can take about a minute.</p>
+    <a class="btn" href="https://cloud-notes-ndw4.onrender.com" target="_blank" rel="noopener">Open Live Application</a>
+  </div>
+
+  <div class="box">
+    <h3>2. Report and deployment details (PDF)</h3>
+    <a class="btn alt" id="reportBtn" href="../report.pdf" target="_blank" rel="noopener">Open Report PDF</a>
+    <a class="btn alt" id="downloadBtn" href="../report.pdf" download>Download PDF</a>
+  </div>
+
+  <div class="box">
+    <h3>3. Source code</h3>
+    <a class="btn alt" href="https://github.com/Jai-ni-sha/cloud-notes" target="_blank" rel="noopener">View on GitHub</a>
+  </div>
+</main>
+
+<script>
+  // OPTIONAL: if you want to use a Google Drive link for the report instead of the
+  // report.pdf file, paste the share link between the quotes. Leave "" to use report.pdf.
+  var REPORT_URL = "";
+
+  if (REPORT_URL) {
+    document.getElementById("reportBtn").href = REPORT_URL;
+    document.getElementById("downloadBtn").style.display = "none";
+  }
+</script>
+</body></html>
